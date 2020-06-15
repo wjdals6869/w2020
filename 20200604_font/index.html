@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>selector</title>
+	<style>
+		/*reset*/
+		/*h3{color:brown;}*/
+		h3,li{color:purple;}
+		/*.main{background-color:skyblue;}*/
+		/*.main{background-image:url(../images/apple.png);}*/
+		/**{color: blue;}*/
+		*{padding:0;margin:0;}
+		/*방문기록 검정으로 바꾸기*/
+		/*a:visited{color:#000;}
+        a:link{color:#000;}*/
+        a:visited,
+        a:link{color:#000;text-decoration:none;}
+        
+        /*body*/
+		body.main{background-color:#FF0;}
+		.warning{color:green}
+		#list{background-color:mistyrose;}
+		#list>li{color:white;}
+		#list>li.active{color:orange;}
+		div>strong{background-color: white;}
+		/*ul>li>strong{background-color: green;}      전체컬러*/
+		/*ul>li{background-color: green;}      전체컬러*/
+		/*ul strong{background-color: green;} 부분컬러*/
+		ul strong{background-color: green;}
+		#list>li;hover{background-color: #ddd;}
+        
+	</style>
+</head>
+<body class="main">
+	<h3>Lorem ipsum dolor</h3>
+	<hr>
+	<!-- 공간분할태그 div -->
+	<!-- ctrl+shift+G 감싸기  /   ctrl+, 단어선택-->
+	<div>
+		<div>Lorem <strong>ipsum</strong> dolor.</div>
+		<ul id="list">
+			<li class="active">
+				<a href="http://www.naver.com">네이버</a>
+			</li>
+			<li>
+				<a href="http://www.korea.com">코리아</a>
+			</li>
+			<li>javascript</li>
+		</ul>
+		<div class="warning">Lorem ipsum dolor sit amet,</div>
+	</div>
+</body>
+</html>

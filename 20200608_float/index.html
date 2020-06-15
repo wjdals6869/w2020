@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		/*reset*/
+		*{margin: 0;padding: 0;}
+		a:link,
+		a:visited{color:#000;text-decoration: none}
+		li{list-style:none;}
+		ul.list>li{
+			background-color:mistyrose;
+			width: 200px;
+		}
+		/*손가락 퍼지게, 센터정렬, 라인간격벌리기?*/
+		ul.list>li>a{display:block;text-align:center;
+			line-height:30px
+		}
+		/*리스트 블럭컬러 바꾸기, 블럭에 마우스 올릴시 텍스트 색상 변경*/
+		ul.list>li>a:hover{
+			background-color:purple;
+			color:#fff;
+		}
+		/*부분 블럭 컬러변경*/
+		/*ul.list>li.blue{background-color: #0ff;}*/
+		ul.list>li:nth-child(2n+1){background-color:linen;}
+		/*처음, 끝*/
+		ul.list>li:first-child,
+		ul.list>li:last-child{background-color:thistle;}
+
+		.blue{background-color:plum !important;}
+
+		/** < tag name < class < id < inline style < !important*/
+
+		div.box{width: 300px;height: 300px;
+			background-color:darksalmon;
+		}
+
+		div.box:after{
+			content:"!!!";
+			color:white;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!-- ul.list>li*10>a[#]>{list$} -->
+	<ul class="list">
+		<li><a href="#" style="color:blue">list1</a></li>
+		<li><a href="#">list2</a></li>
+		<li><a href="#">list3</a></li>
+		<li><a href="#">list4</a></li>
+		<li class="blue"><a href="#">list5</a></li>
+		<li><a href="#">list6</a></li>
+		<li><a href="#">list7</a></li>
+		<li><a href="#">list8</a></li>
+		<li><a href="#">list9</a></li>
+		<li><a href="#">list10</a></li>
+	</ul>
+
+	<!-- 공간분할태그 div !!!!!!!! -->
+	<div class="box">안녕하세요</div>
+</body>
+</body>
+</html>

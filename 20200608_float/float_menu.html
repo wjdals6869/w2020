@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>float menu</title>
+	<style>
+		/*reset*/
+		*{margin: 0;padding: 0;}
+		a:link,a:visited{color:#000;text-decoration:none;}
+		li{list-style:none;}
+
+		/*menu*/
+		.navWrap{
+		/*메뉴 사이즈/메뉴 컬러/
+		메뉴 중앙정렬/메뉴랑 하단 띄우기*/
+		width: 1000px;background-color:darkseagreen;
+		margin:0 auto;margin-bottom: 10px;
+	    }
+	    .navWrap>ul:after{content:"";display:block;clear:both;}
+	    /*아래정렬말고 왼쪽정렬/칸 띄워 나누기/계산법 1000/5 ctrl+shift+Y*/
+	    .navWrap>ul>li{float: left;width:20%;}
+	    /*블럭까지 손가락 뜨기/상하크기키우기/중앙정렬*/
+	    .navWrap>ul>li>a{
+	    	display: block;
+	    	line-height: 50px;
+	    	text-align: center;}
+	    .navWrap>ul>li>a:hover{
+	    	background-color:hotpink;
+            color:#fff;
+	    }
+	    /*visual Wrapper*/
+	    div.visualWrap{
+	    	height: 400px;
+	    	background-color:plum;
+	    }
+	</style>
+</head>
+<body>
+	<nav class="navWrap"> <!-- w1000 -->
+		<!-- 링크대체로 #을 사용함 -->
+		<!-- ul>li*5>a[#]>{MENU$} -->
+		<ul>
+			<li><a href="#">MENU1</a></li>
+			<li><a href="#">MENU2</a></li>
+			<li><a href="#">MENU3</a></li>
+			<li><a href="#">MENU4</a></li>
+			<li><a href="#">MENU5</a></li>
+		</ul>
+	</nav>
+	<div class="visualWrap"></div>
+</body>
+</html>

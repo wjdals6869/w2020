@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>box model</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		a:link,visited{color:#000;text-decoration:none}
+		li{list-style:none;}
+
+		body{background-image:url(../images/bg_grid.gif);}
+		div.box{
+			width: 200px;height: 200px;
+			background-color:linen;
+	/*		margin-top: 10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			margin-left: 10px;
+			margin: 10px 10px 10px 10px;
+			다똑같음*/
+			/*border-sizing 넣고 마진 뺌 margin: 10px;*/
+			padding: 10px;
+			/*border-color:orange;
+			border-width:10px;
+			border-style:solid;*/
+			border: 10px solid mistyrose;
+			box-sizing:border-box;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box">test</div>
+</body>
+</html>
