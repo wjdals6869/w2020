@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>script</title>
+</head>
+<body>
+	<script>
+		var sum = 0;
+		function name(a,b){
+			sum = a + b;
+			document.write(a + "+" + b + "=" + sum);
+		};
+		name(10,20)
+		function over(obj){
+			// alert(obj.src);
+			obj.src = "../../images/banana.png"
+		}
+		function out(obj){
+			obj.src = "../../images/apple.png";
+		}
+	</script>
+
+	<h3>마우스를 올려보세요</h3>
+	<img src="../../images/apple.png" alt="" onmouseover="over(this)" onmouseout="out(this)">
+</body>
+</html>

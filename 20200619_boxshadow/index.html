@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>box shadow</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.box{
+			width: 300px;height: 300px;
+			background:linen;
+			padding: 20px 25px;
+			border: 5px solid white;
+			transition:0.3s;
+			border-radius: 10px;
+			_position: absolute;
+			left:20px;top: 20px;
+			box-shadow:
+			10px 10px 10px #eee,
+			-5px -5px 10px #eee,
+			-10px 20px 10px #eee,
+			10px -10px 10px #eee;
+			margin-bottom: 200px;
+		}
+		/*.box:hover{
+			box-shadow:
+			10px 10px 10px #aaa,
+			-5px -5px 10px #aaa,
+			-10px 20px 10px #aaa,
+			10px -10px 10px #aaa;
+		}*/
+		.box1{
+			height: 500px;
+			background: url(../images/pc01.jpg) no-repeat center;
+			background-size: cover;
+			position: relative;
+		}
+		.box1 h2{
+			width: 400px;height: 108px;
+			background: #fff;
+			text-align: center;font-size:2.5em;
+			position: absolute;
+			left: 50%;top: 50%;
+			margin-left: -200px;margin-top: -54px;
+			color:white;
+			text-shadow:0 0 10px #000;
+		}
+		.box2{
+			width: 300px;height: 300px;
+			background:darkseagreen;
+			padding: 10px; /*항상넣기*/
+			position: relative;
+			top: 30px;left: 30px;
+			margin-bottom:100px;
+			transition:0.3s;
+		}
+		.box2:hover{box-shadow:0 0 20px #000;}
+
+	</style>
+</head>
+<body>
+	<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quae animi accusantium libero atque asperiores architecto nemo cumque explicabo rem!</div>
+
+	<div class="box1">
+		<h2>Lorem ipsum dolor sit amet.</h2>
+	</div>
+
+	<div class="box2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, temporibus.
+	</div>
+</body>
+</html>

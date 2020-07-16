@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>mobile</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		table{
+			width: 100%;
+			border: 1px solid #000;
+			border-collapse:collapse;
+		}
+		td{
+			border: 1px solid #000;
+			height: 50px;
+			text-align: center;
+			/*vertical-align:middle;*/ /*top bottom*/
+			width: 25%;
+		}
+		.box{
+			display:table;width: 100%;height: 100px;
+			border: 5px solid #000;
+		}
+		.box>li{
+			display:table-cell;
+			vertical-align: middle;
+			text-align: center;
+			border-right: 5px solid #000;
+			width: 20%;transition:0.3s;
+		}
+		.box>li:last-child{
+			border-right: 0 none;
+		}
+		.box:hover li{width: 30%;}
+	</style>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>lorem</td>
+			<td>sdkfj</td>
+			<td>dfsfss</td>
+			<td>dfdfdfd</td>
+		</tr>
+	</table>
+	<ul class="box">
+		<li>test1</li>
+		<li>test2</li>
+		<li>test3</li>
+		<li>test4</li>
+		<li>test5</li>
+	</ul>
+</body>
+</html>

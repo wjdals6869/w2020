@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>media</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".icon").click(function(){
+				var topClass = $("#myTopMenu").attr("class");
+				// alert(topClass);
+				if( topClass == "topNav clearfix"){
+					$("#myTopMenu").addClass("responsive");
+				}else{
+					$("myTopMenu").removeClass("responsive");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="menuWrap">
+		<nav id="myTopMenu" class="topNav clearfix">
+			<a href="#">HOME</a>
+			<a href="#"><i class="fas fa-headphones"></i> NEWS</a>
+			<a href="#"><i class="fas fa-home"></i> CONTECT</a>
+			<a href="#"><i class="fas fa-umbrella"></i> PRODUCT</a>
+			<a href="#" class="icon"><i class="fas fa-bars"></i></a>
+		</nav>
+	</div>
+	<div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex debitis dolor architecto dignissimos voluptatibus voluptas impedit, natus, eaque quia amet animi enim illum quisquam laudantium dolore distinctio quo officiis totam beatae, aspernatur placeat soluta esse! Reprehenderit nam iure esse qui, nesciunt officiis laborum harum deleniti ipsa, modi magnam quaerat laudantium earum pariatur illum autem! Consectetur itaque, aut natus necessitatibus, ipsam minima quae similique recusandae nisi laudantium harum, repudiandae sequi perspiciatis beatae, atque inventore pariatur sint dolor blanditiis sunt. Animi ea, dolores ipsa possimus natus facilis, placeat illo eligendi quaerat mollitia corporis, debitis reiciendis explicabo deserunt culpa, consequatur laborum unde quos! Vitae culpa dolorem sunt cumque odio eligendi pariatur, eum fugit quia deleniti earum consequatur molestiae non aut, rem laboriosam qui voluptatibus saepe molestias sed sapiente tenetur veniam. Quam velit cupiditate distinctio fugiat. Molestias nisi earum, voluptatem quos voluptatum eum exercitationem? Voluptatibus minima sit iste doloribus illum possimus vel ad voluptatum, libero nesciunt, maiores. In iusto cum, praesentium distinctio, doloribus deleniti sit officiis odio ex incidunt voluptatem magnam corporis. Ipsa id, recusandae aut vitae delectus eaque asperiores quaerat nulla veritatis architecto ratione voluptas libero quam, quas beatae harum aliquam blanditiis? Voluptatem sapiente quo nam voluptatibus quod magni illum, corrupti neque dolorem repellendus quis numquam saepe mollitia earum enim nemo eius, at nihil reiciendis maxime quasi doloribus est? Cum reprehenderit possimus laborum, aliquid. Debitis minima sequi eos pariatur quos sapiente consequuntur, tempore officia vero culpa ad repellat impedit quas excepturi non alias nulla ut tenetur magnam animi, perspiciatis illum. Cumque eos qui voluptatem blanditiis adipisci officia sunt corrupti id molestias quis obcaecati aspernatur, quasi nulla, veniam earum ducimus illo quibusdam corporis a, modi possimus pariatur dolorum? Iste, libero totam nesciunt ipsum, sunt officiis, repudiandae voluptate mollitia facilis ipsam voluptatibus iusto? Officia dolor nemo corrupti eius sapiente cupiditate, aliquid at, dolores adipisci natus?</div>
+</body>
+</html>
