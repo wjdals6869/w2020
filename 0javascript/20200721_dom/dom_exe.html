@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>dom 연습</title>
+	<script>
+		function change(){
+			var span = document.getElementsByTagName("span");
+			console.log(span.length);
+			for(var i=0;i<span.length;i++){
+				span[i].style.color="red";
+				span[i].style.fontWeight="bold";
+			}
+		}
+		function cChange(){
+			var span = document.getElementsByClassName("text");
+			for(var i=0;i<span.length;i++){
+				span[i].style.color="blue";
+				span[i].style.fontWeight="bold";
+			}
+		}
+		// ------------------------------------------------------
+
+	</script>
+</head>
+<body>
+	Lorem ipsum <span class="text">dolor</span> sit amet, <span>consectetu</span>r adipisicing elit. Et suscipit, dolorum <span class="text">asperiores,</span> vitae ad architecto voluptate molestias repudiandae atque, error quae <span>officiis</span> beatae. Nesciunt dolorum quibusdam <span class="text">asperiores</span>, enim, voluptatum fugiat.
+	<div onclick="change()">태그변경</div>
+	<div onclick="cChange()">클래스변경</div>
+	-----------------------------------------------------------
+	<p style="color:blue" id="myP">이것은
+		<span id="mySpan" style="color:red">문장입니다.</span>
+	</p>
+
+</body>
+</html>

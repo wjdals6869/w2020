@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>테스트1</title>
+	<script>
+	// test1
+
+	function change(){
+		var p = document.getElementById("myP");
+		p.style.color = "red";
+		p.style.background = "gray";
+		var text = "스타일을 변경합니다."
+		alert(text);
+	}
+	function reset(){
+		var p = document.getElementById("myP");
+		p.style.color = "";
+		p.style.background = "";
+	}
+
+	// test2
+
+	// var text = "안녕하세요!\n";
+	// text += "저는'한성용'입니다."
+	// alert(text);
+	</script>
+</head>
+<body>
+	<p id="myP">이것은 문장입니다.</p>
+	<button type="button" onclick="change()">버튼1</button>
+	<button type="button" onclick="reset()">버튼2</button>
+</body>
+</html>
