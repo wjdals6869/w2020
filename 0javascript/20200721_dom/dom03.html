@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>dom03</title>
+	<script>
+		function change(){
+			var span = document.getElementsByTagName("span");
+			for(var i=0;i<span.length;i++){
+				span[i].style.color = "red";
+				span[i].style.fontSize = "2em";
+				span[i].style.fontWeight = "bold";
+				// document.getElementsByTagName("span")[i].style.color = "blue"
+			}
+		}
+	</script>
+</head>
+<body>
+	<h3>
+	내가 좋아하는 과일
+	<button type="button" onclick="change()">누르세요</button>
+	</h3>
+	Lorem ipsum dolor sit <span>사과</span>amet, consectetur adipisicing elit.<span>토마토</span> Repellat dolorem omnis sapiente doloremque nam, quidem, culpa <span>딸기</span>placeat dolorum ducimus cumque unde dolores illum! <span>수박</span>Deleniti quos sed doloremque nemo aut molestias.
+</body>
+</html>
