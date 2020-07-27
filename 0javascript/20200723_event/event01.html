@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>event</title>
+	<script>
+		var pTag;
+		function init(){
+			pTag = document.getElementById("newP");
+
+			pTag.onmouseover = function(){
+				pTag.style.background = "orchid";
+			};
+
+			//pTag.onmouseout = out;
+			//pTag.addEventListener("mouseout",out);
+			pTag.addEventListener("mouseout",out);
+		}
+		function out(){
+			pTag.style.background="white";
+		}
+	</script>	
+</head>
+<body onload="init()">
+	<p id="newP">마우스 올리면 색변경</p>
+</body>
+</html>
