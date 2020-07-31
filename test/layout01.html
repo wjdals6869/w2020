@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<style>
+		/*meno
+		블럭 단위 요소는 부모의 크기 만큼 움직인다*/
+		
+		/*초기값 설정하기*/
+		*{padding: 0;margin: 0;}
+		/* *<tag name << class << id << inline style << !important*/
+		div.wrap{width: 1000px;margin: 0 auto;background:skyblue;text-align: center;}
+
+		/*header*/
+		#header:after{content:"";display: block;clear: both;}
+		#header>h1{width: 100px;height: 50px;line-height: 50px;float: left;background:#f00;}
+		#header>nav{width: 900px;height: 50px;line-height: 50px;float: left;background: #ff0;/*text-align: initial;*/}
+
+
+		/*section*/
+		#section>div.visual{background: #0ff;height: 300px;line-height: 300px;}
+		.article,
+		.gallery,
+		.popup{width: 33.333%;height:200px;line-height: 200px;float: left;}
+
+		.content:after{content:"";display: block;clear: both;}
+
+		.article{background-color: #ff00ff;}
+		.gallery{background-color: #fff;}
+		.popup{background-color: #ff00ff;}
+
+		#footer{height: 50px;line-height: 50px;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<header id="header">
+			<h1>로고</h1>
+			<nav>메뉴</nav>
+		</header>		
+		<section id="section">
+			<div class="visual">이미지 슬라이드</div>
+			<section class="content">
+				<artical class="article">공지사항</artical>
+				<div class="gallery">갤러리</div>
+				<div class="popup">팝업</div>
+			</section>
+		</section>
+		<footer id="footer">
+			<address>Lorem ipsum dolor sit amet.</address>
+		</footer>
+	</div>
+</body>
+</html>

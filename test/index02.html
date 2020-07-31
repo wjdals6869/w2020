@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		.boxWrap1{width: 300px;height: 300px;position: relative;overflow:hidden;}
+		.wrap{width: 900px;height: 300px;position: absolute;left: -600px;}
+		.wrap:after{content:"";display: block;clear: both;}
+		.wrap div{float: left;width: 300px;height: 300px;}
+		.wrap div.box1{background: #f00;}
+		.wrap div.box2{background: #0f0;}
+		.wrap div.box3{background: #00f;}
+	</style>
+</head>
+<body>
+	<div class="boxWrap1">
+		<div class="wrap">
+			<div class="box1">Lorem ipsum.</div>
+			<div class="box2">Fugit, non!</div>
+			<div class="box3">Dolorum, porro?</div>
+		</div>
+	</div>
+</body>
+</html>

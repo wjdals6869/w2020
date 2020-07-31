@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+</head>
+<style>
+	*{padding: 0;margin: 0;}
+	.boxWrap{
+		width: 500px;_height: 200px;
+		background:mistyrose;
+	}
+	.box1{
+		background:red;
+		width: 200px;
+		height: 100px;
+		float: left;
+	}
+	.box2{
+		background:teal;
+		width: 200px;
+		height: 100px;
+		float: left;
+	}
+	.cb{clear: both;background:blue;}
+	/*.boxWrap:after{content:"";clear: both;display: block;}*/
+	.clearfix:after{content:"";clear: both;display: block;}
+	/*.boxWrap:before{content:"안녕하세요";}*/
+</style>
+<body>
+	<div class="boxWrap clearfix">
+		<!-- before의 자리 -->
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<!-- <div class="cb">3</div> -->
+		<!-- after의 자리 -->
+	</div>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis nostrum quidem, non nesciunt inventore enim. Dignissimos blanditiis excepturi dolorem ipsum molestias, velit eveniet placeat pariatur vitae voluptatibus corrupti incidunt. Beatae.
+</body>
+</html>
