@@ -12,7 +12,22 @@
 		$(function(){
 			$("#fullpage").fullpage({
 				anchors:["a1st","a2st","a3st","a4st"],
-				menu:"#topMenu"
+				menu:"#topMenu",
+				navigation:true,
+				navigationPosition:"right",
+				afterLoad:function(anchorsLink,index){
+					console.log(anchorsLink + ", " + index);
+					if(index ==1){
+						$("#onViewOne").addClass("move");
+					}else{
+						$("#onViewOne").removeClass("move")
+					}
+					if(index ==2){
+						$("#onViewTwo").addClass("move");
+					}else{
+						$("#onViewTwo").removeClass("move")
+					}
+				}
 			});
 		});
 	</script>
@@ -36,9 +51,55 @@
 		nav#navTop li a{
 			display: block;line-height: 50px;
 			text-align: center;padding: 0 10px;
+			color:#fff;
 		}
 
-		nav#navTop li.active{background-color:mediumseagreen;}
+		nav#navTop li.active{background-color:#000;}
+		.scroll{
+			position: absolute;left: 50%;transform:translateX(-50%);
+			bottom: 20px;animation:xScroll 0.8s infinite alternate;
+		}
+		@keyframes xScroll{
+			from{bottom: 20px;}
+			to{bottom: 40px;}
+		}
+		.main{
+			width: 400px;position: absolute;left: 50%;
+			transform:translateX(-50%);top: 35%;
+			color:white;text-align: center;
+		}
+		/*.main p{margin-bottom: 20px;}*/
+		.main a{
+			display: block;width: 150px;
+			border: 1px solid #fff;
+			line-height: 35px;
+			color:#fff;border-radius:18px;
+			margin: 0 auto;
+		}
+		.main a:hover{background-color: #fff;color:#000;}
+
+		#onViewOne{top: 10%;transition:0.3s;opacity:0;}
+		#onViewOne.move{top: 30%;opacity:1;}
+
+		#onViewTwo{left: 10%;transition:0.3s;opacity:0;}
+		#onViewTwo.move{left: 50%;opacity:1;}
+
+
+
+
+		.f3em{font-size:3em !important}
+		.f25em{font-size:2.5em !important}
+		.f2em{font-size:2em !important}
+		.f15em{font-size:1.5em !important}
+		.mb20{margin-bottom: 20px !important;}
+
+
+		.slide{position: relative;}
+		.slide .view{
+			position: absolute;width:80%;height: 500px;
+			background-color:skyblue;left: 50%;top: 50%;
+			transform:translate(-50%,-50%);
+		}
 	</style>
 </head>
 <body>
@@ -51,10 +112,42 @@
 		</ul>
 	</nav>
 	<div id="fullpage">
-		<div class="section" id="page1" data-anchor="a1st"></div>
-		<div class="section" id="page2" data-anchor="a2st"></div>
+		<div class="section" id="page1" data-anchor="a1st">
+			<div class="main" id="onViewOne">
+				<h3 class="f25em">Lorem ipsum.</h3>
+				<p class="f15em mb20">Lorem ipsum dolor sit.</p>
+				<a href="#">MORE</a>
+			</div>
+			<div class="scroll">
+				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div>
+		<div class="section" id="page2" data-anchor="a2st">
+			<div class="main" id="onViewTwo">
+				<h3 class="f25em">Lorem ipsum.</h3>
+				<p class="f15em mb20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet.</p>
+				<a href="#">MORE</a>
+			</div>
+			<div class="scroll">
+				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div>
 		<div class="section" id="page3" data-anchor="a3st"></div>
-		<div class="section" id="page4" data-anchor="a4st"></div>
+		<div class="section" id="page4" data-anchor="a4st">
+			<div class="slide">
+				<div class="view">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur tempora, dolores. Enim explicabo, atque nobis officia, ipsum dolore, quaerat saepe autem accusamus possimus nulla praesentium hic numquam nesciunt dicta assumenda?</div>
+			</div>
+			<div class="slide">
+				<div class="view">Sint earum quia reiciendis, et ad eum commodi rem minus fugiat magni aut deleniti in molestias recusandae tempora reprehenderit aspernatur provident totam velit alias, esse sequi aperiam excepturi accusamus nulla!</div>
+			</div>
+			<div class="slide">
+				<div class="view">Dolores molestias voluptatum, omnis dicta ullam, eveniet minus optio dignissimos cupiditate officia veniam perspiciatis repellat maxime ea non doloremque distinctio praesentium tenetur corporis, quidem quae nesciunt ad! Ex repellat, voluptatem!</div>
+			</div>
+		</div>
+			
+	</div>
+	<div class="section fp-auto-height" data-anchor="a5st">
+		<div class="footer" style="height:300px;background-color:skyblue;"></div>
 	</div>
 </body>
 </html>
