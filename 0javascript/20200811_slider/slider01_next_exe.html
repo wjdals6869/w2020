@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>연습</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<script src="../../js/jquery-3.1.1.min.js"></script>
+	<script>
+		$(function(){
+			var current = 0;
+			var banner = $("#wrapper li");
+			var i;
+			var overBtn = false;
+
+			function slideNext(){}
+			function slidePrev(){}
+
+			$(".bt_next").click(function(){slideNext();})
+		});
+	</script>
+	<style>
+		img{display: block;width: 500px;}
+		#wrapper{
+			width: 500px;height: 238px;
+			margin: 20 auto;
+			background-color:pink;
+		}
+		#wrapper ul{
+			width: 500px;height: 208px;
+			position: relative;overflow: hidden;
+		}
+		#wrapper ul li{position: absolute;left: 100%;}
+		#wrapper ul li:nth-child(1){left: 0;}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<ul>
+			<li><img src="../../images/pc01.jpg" alt=""></li>
+			<li><img src="../../images/pc02.jpg" alt=""></li>
+			<li><img src="../../images/pc03.jpg" alt=""></li>
+		</ul>
+		<div class="btn">
+			<span class="bt_prev">이전</span>
+			<span class="bt_next">다음</span>
+		</div>
+	</div>
+</body>
+</html>
