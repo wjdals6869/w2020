@@ -100,6 +100,12 @@
 			background-color:skyblue;left: 50%;top: 50%;
 			transform:translate(-50%,-50%);
 		}
+
+		#video{
+			position: absolute;
+			width: 100%;height: 100%;
+			object-fit: cover;top: 0;	
+		}
 	</style>
 </head>
 <body>
@@ -113,6 +119,7 @@
 	</nav>
 	<div id="fullpage">
 		<div class="section" id="page1" data-anchor="a1st">
+			
 			<div class="main" id="onViewOne">
 				<h3 class="f25em">Lorem ipsum.</h3>
 				<p class="f15em mb20">Lorem ipsum dolor sit.</p>
@@ -123,6 +130,9 @@
 			</div>
 		</div>
 		<div class="section" id="page2" data-anchor="a2st">
+			<video id="video" autoplay muted data-autoplay loop>
+				<source src="video/video.mp4" type="video/mp4">
+			</video>
 			<div class="main" id="onViewTwo">
 				<h3 class="f25em">Lorem ipsum.</h3>
 				<p class="f15em mb20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet.</p>
