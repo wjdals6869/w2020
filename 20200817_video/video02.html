@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>video</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		body{height: 100%;}
+		h1{
+			position: absolute;z-index:1;
+			color:#fff;left: 50%;top: 50%;
+			transform:translate(-50%,-50%);
+			font-size:3em;font-style: italic;
+		}
+		#myVideo{
+			position: absolute;
+			width: 100%;height: 100%;
+			object-fit:cover;
+		}
+	</style>
+</head>
+<body>
+	<h1>bravo my life</h1>
+	<video id="myVideo" autoplay="true" muted loop controls>
+		<source src="video.mp4" type="video/mp4">
+	</video>
+</body>
+</html>
