@@ -5,11 +5,20 @@
 	<meta charset="UTF-8">
 	<title>fullpage</title>
 	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/jquery.fullpage.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(function(){
+			$(".fullpage_bbs,.fullpage_bbs1").colorbox({
+				iframe:true,
+				// innerWidth:800,
+				// innerHeight:400,
+				width:"80%",
+				 height:"50%"
+			});
 			$("#fullpage").fullpage({
 				anchors:["a1st","a2st","a3st","a4st"],
 				menu:"#topMenu",
@@ -136,7 +145,9 @@
 			<div class="main" id="onViewTwo">
 				<h3 class="f25em">Lorem ipsum.</h3>
 				<p class="f15em mb20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, eveniet.</p>
-				<a href="#">MORE</a>
+				<a href="http://hwadan.dothome.co.kr/main/adm/board_form.php" class="fullpage_bbs" style="margin-bottom: 10px">MORE</a>
+
+				<a href="http://hwadan.dothome.co.kr/main/adm/board_form.php" class="fullpage_bbs1" style="margin-bottom: 10px">MORE</a>
 			</div>
 			<div class="scroll">
 				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
