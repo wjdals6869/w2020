@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>flex</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		.wrapper{margin-bottom: 50px;padding: 30px 0;}
+		.wrapper h3{text-align: center;font-size: 1.6em}
+		.intro{padding: 20px 50px;}
+		.img{display: none;}
+
+		.program-list{padding: 20px 50px;}
+		.program-list h4{font-size:1.3em;margin-bottom: 20px;}
+		.program-list .program{
+			padding: 30px;background: #fff;
+			border: 1px solid #aaa;
+			margin-bottom: 20px;
+		}
+		.gray{background: #ccc;}
+
+		/*footer*/
+		.footer{
+			padding-top: 30px;
+			padding-bottom: 50px;
+			background: #34495e;
+		}
+		.footer-info{padding: 0 50px;}
+		.contact{color:#fff;margin-bottom: 20px;}
+		.sns a{display: inline-block;}
+
+		@media screen and (min-width: 764px){
+			.wrapper{
+				width: 1200px;margin: 0 auto;
+			}
+			.img{display: block;}
+
+			.intro{display: flex;align-items:center;}
+			.intro .txt{flex:2;padding:0 50px;}
+			.intro .img{
+				flex:1;display: block;
+				/*가운데정렬*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				/*가운데정렬*/
+			}
+
+
+			.program-list{
+				display: flex;
+				justify-content:space-between;
+			}
+			.program{
+				/*flex-grow: 1;
+				flex-shrink: ;
+				flex-basis: ;*/
+
+				flex-basis: 24%;
+			}
+
+			/*footer*/
+			.footer-info{display: flex;}
+			.contact{flex:2;}
+			.sns{flex:1;display: flex;justify-content: flex-end;/*끝으로*/}
+			.sns a{margin-left: 10px;}
+		} 
+	</style>
+</head>
+<body>
+	<section>
+		<div class="wrapper">
+			<h3>Lorem ipsum, dolor sit.</h3>
+			<div class="intro">
+				<div class="txt">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt ullam ea laborum iusto pariatur hic molestiae illo ducimus! Ducimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt ullam ea laborum iusto pariatur hic molestiae illo ducimus! Ducimus.</p>
+				</div>
+				<div class="img">
+					<img src="images/coding.png" alt="" width="250">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="gray">
+		<div class="wrapper">
+			<h3>교육프로그램</h3>
+			<div class="program-list">
+				<div class="program">
+					<h4>Lorem, ipsum.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae neque optio rerum facilis nobis quo corrupti repudiandae excepturi assumenda incidunt.</p>
+				</div>
+				<div class="program">
+					<h4>Lorem, ipsum.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae neque optio rerum facilis nobis quo corrupti repudiandae excepturi assumenda incidunt.</p>
+				</div>
+				<div class="program">
+					<h4>Lorem, ipsum.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae neque optio rerum facilis nobis quo corrupti repudiandae excepturi assumenda incidunt.</p>
+				</div>
+				<div class="program">
+					<h4>Lorem, ipsum.</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae neque optio rerum facilis nobis quo corrupti repudiandae excepturi assumenda incidunt.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-info">
+				<div class="contact">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+					<p>Dignissimos consectetur aperiam ullam voluptatibus minus doloremque.</p>
+					<p>Consectetur harum, expedita quas laudantium accusamus provident.</p>
+					<p>Illum iste, illo, odio quas placeat voluptatem.</p>
+				</div>
+				<div class="sns">
+					<a href="#"><img src="images/fb.png" alt="img"></a>
+					<a href="#"><img src="images/tw.png" alt="img"></a>
+					<a href="#"><img src="images/ytube.png" alt="img"></a>
+					<a href="#"><img src="images/gp.png" alt="img"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

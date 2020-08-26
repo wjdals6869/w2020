@@ -3,18 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>bootstrap01</title>
+	<title>bootstrap</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
 <style>
 	.box1{height: 40px;}
 	.bg-sky{background: pink;}
+	.container{margin-bottom: 50px;}
 </style>
 <body>
 	<div class="bg-sky py-5">
@@ -61,6 +63,68 @@
 				<button type="button" class="btn btn-success btn-block">basic</button>
 			</div>
 		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="btn-group">
+					<button class="btn btn-primary active">Apple</button>
+					<button class="btn btn-primary">Samsung</button>
+					<div class="btn-group">
+						<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Sony</button>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">tablet</a>
+							<a href="#" class="dropdown-item">smartphone</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
+	<ul class="nav bg-primary">
+		<li class="nav-item">
+			<a href="#" class="nav-link">menu1</a>
+		</li>
+		<li class="nav-item">
+			<a href="#" class="nav-link">menu2</a>
+		</li>
+		<li class="nav-item">
+			<a href="#" class="nav-link">menu3</a>
+		</li>
+		<li class="nav-item">
+			<a href="#" class="nav-link">menu4</a>
+		</li>
+		<li class="nav-item">
+			<a href="#" class="nav-link">menu5</a>
+		</li>
+	</ul>
+	<div style="height:20px"></div>
+
+	<div class="container">
+		<div class="row">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#menu1" class="nav-link active btn" data-toggle="tab">link1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu2" class="nav-link btn" data-toggle="tab">link2</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu3" class="nav-link btn" data-toggle="tab">link3</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div class="tab-pane avtive py-3" id="menu1">
+				1Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, inventore voluptatibus dolore ullam voluptas, dolores quia delectus et minus, nisi earum nam soluta aliquam repellendus nihil autem quas impedit repudiandae.
+				</div>
+				<div class="tab-pane fade py-3" id="menu2">
+				2Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, inventore voluptatibus dolore ullam voluptas, dolores quia delectus et minus, nisi earum nam soluta aliquam repellendus nihil autem quas impedit repudiandae.
+				</div>
+				<div class="tab-pane fade py-3" id="menu3">
+				3Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, inventore voluptatibus dolore ullam voluptas, dolores quia delectus et minus, nisi earum nam soluta aliquam repellendus nihil autem quas impedit repudiandae.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="height:300px"></div>
 </body>
 </html>
