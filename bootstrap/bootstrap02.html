@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="css/bootstrap.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+		.bg-sky{background:skyblue;}
+	</style>
+</head>
+<body>
+
+	<!-- 
+0 - sets margin or padding to 0
+1 - sets margin or padding to .25rem (4px if font-size is 16px)
+2 - sets margin or padding to .5rem (8px if font-size is 16px)
+3 - sets margin or padding to 1rem (16px if font-size is 16px)
+4 - sets margin or padding to 1.5rem (24px if font-size is 16px)
+5 - sets margin or padding to 3rem (48px if font-size is 16px)
+ -->
+ 
+	<div class="bg-success py-3">
+		<div class="container bg-info">
+			<div class="row text-center text-light">
+				<!-- 지정안하면 무조건 12칸 -->
+				<div class="col-md-6 bg-danger">Lorem.1</div>
+				<div class="col-md-6 bg-primary">Lorem.2</div>
+				<div class="col-md-12 bg-dark">Lorem.3</div>
+				<div class="col-md-12 bg-sky text-dark">Lorem.4</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<ul class="nav nav-tabs">
+				<li class="nav-item">
+					<a href="#home" class="nav-link active" data-toggle="tab">home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu1" class="nav-link" data-toggle="tab">menu1</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu2" class="nav-link" data-toggle="tab">menu2</a>
+				</li>
+				<li class="nav-item">
+					<a href="#menu3" class="nav-link" data-toggle="tab">menu3</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="tab-pane active">Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Voluptatibus, optio placeat pariatur corrupti corporis deleniti debitis labore dolore officia iure nulla saepe eligendi rem atque nobis exercitationem. Ex excepturi, minima.</div>
+				<div id="menu1" class="tab-pane fade">Autem vitae corporis pariatur recusandae atque in eos eaque harum optio facilis reiciendis eligendi doloremque omnis accusantium odio culpa nemo vero totam exercitationem voluptas, dignissimos. Sequi, consequuntur explicabo sed reiciendis?</div>
+				<div id="menu2" class="tab-pane fade">Sunt nostrum beatae quasi ex veritatis vero? Suscipit commodi a, culpa quod repudiandae, cum. Ipsam, veniam, voluptas dolore iure at quidem eos placeat iste asperiores, id tenetur earum repudiandae eum.</div>
+				<div id="menu3" class="tab-pane fade">Necessitatibus ipsa eaque natus ullam suscipit eveniet beatae eligendi aperiam explicabo expedita nihil, quasi fugiat, velit quaerat tenetur, repellat deserunt ducimus. Eius ex fugiat officia dolorem assumenda amet! Optio, voluptatibus!</div>
+			</div>
+		</div>
+	</div>
+	<style>
+		.bg-img1{background:url(images/pc01.jpg) center;}
+	</style>
+	<div class="container pl-0 pr-0 text-light">
+		<div class="jumbotron bg-img1">
+  			<h1>Bootstrap Tutorial</h1>
+ 			<p>Bootstrap is the most popular HTML, CSS...</p>
+		</div>
+	</div>
+
+
+	<div class="container mb-4">
+		<div class="row">
+
+
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+
+
+		</div><!--row end-->
+	</div><!--container end-->
+
+<div class="bg-sky py-5">
+	<div class="container">
+		<h2 class="text-center mb-5">gallery</h2>
+		<div class="row">
+
+
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3 mb-3 mb-sm-0">
+				<div class="card">
+					<img src="images/testimg.jpg" class="card-img-top" alt="">
+					<div class="card-body">
+						<h4 class="card-title">Lorem</h4>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+						<button type="button" class="btn btn-primary">link</button>
+					</div>
+				</div>
+			</div>
+
+
+		</div><!--row end-->
+	</div><!--container end-->
+</div><!--bg-color-->
+	<div style="height:500px"></div>
+</body>
+</html>
